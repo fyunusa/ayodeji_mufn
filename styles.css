@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    /* width: 80%; */
+    /* margin: auto; */
+    /* padding: 20px; */
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+h1 {
+    color: #333;
+}
+
+.tabs {
+    display: flex;
+    /* border-bottom: 2px solid #ccc; */
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #f9f9f9;
+    /* color: #f9f9f9!important; */
+}
+
+.tab-button.active {
+    background-color: #007bff;
+    /* border-bottom: 2px solid #007bff; */
+}
+
+.application-management .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+.controls select {
+    margin-right: 20px;
+}
+
+.application-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.application-table th, .application-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.application-table th {
+    background-color: #f9f9f9;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.status.approved {
+    background-color: #28a745;
+}
+
+.status.pending {
+    background-color: #ffc107;
+}
+
+
+
+button {
+    background-color: #007bff;
+    /* color: #fff; */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn {
+    color: #fff;
+
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.sel{
+    border-radius: 4px;
+    padding: 10px, 12px, 10px, 12px;
+    font-size: 16px;
+
+}
+
+.tbl-btn{
+    background-color: #f9f9f9;
+
+}
+#top-span{
+    font-size: 14px;
+}
+#top-h2{
+    font-size: 20px;
+}
+#top-h1{
+    font-size: 24px;
+    margin: 0;
+}
+
+.red-dot {
+    color: red;
+    font-size: 0.6em;
+    vertical-align: super;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.pagination-button {
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.pagination-button:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination-button.active {
+    background-color: #334e7b;
+    color: #fff;
+}
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+} */
+
+.modal {
+    display: none; /* Show the modal */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-actions button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-actions button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-actions button.cancel {
+    background-color: #6c757d;
+    color: white;
+}
+
+
+
+
