@@ -8,30 +8,38 @@
   </head>
   <body>
     <div class="container">
+      <!-- <img
+        src="/home/ayodeji-olaniran/Downloads/회원관리_회원 상세_투자유형 관리.png"
+        id="design-overlay"
+      /> -->
+
       <h1 id="top-h1">
         회원상세
-        <span class="red-dot">.</span>
-        <span class="top-span">필수항목</span>
+        <sup style="font-size: 27px; margin-left: 12px; color: red">°</sup>
+        <!-- <span class="red-dot">.</span> -->
+        <span class="top-span" style="font-size: 21px; color: red"
+          >필수항목.</span
+        >
       </h1>
 
       <hr />
 
       <div class="tabs">
-        <button class="tab-button">기본정보</button>
+        <button class="tab-button">기본정보 관리</button>
         <button class="tab-button active">투자유형 관리</button>
-        <button class="tab-button">입금금액 조회</button>
-        <button class="tab-button">입금내역 조회</button>
+        <button class="tab-button">입출금내역 조회</button>
+        <button class="tab-button">영업내역 조회</button>
         <button class="tab-button">투자내역 조회</button>
         <button class="tab-button">채권내역 조회</button>
         <button class="tab-button">SMS 관리</button>
-        <button class="tab-button">이메일 조회</button>
-        <button class="tab-button">회원정보 조회</button>
-        <button class="tab-button">11번 항목</button>
+        <!-- <button class="tab-button">이메일 조회</button> -->
+        <button class="tab-button">상담내역 관리</button>
+        <button class="tab-button">1:1문의내역 조회</button>
       </div>
       <div class="application-management">
         <div class="header">
           <h2 id="top-h2">
-            투자유형 관리 <span id="top-span">(총 100명 | 승인대기 1건)</span>
+            신청 목록 <span id="top-span">(총 100명 | 승인대기 1건)</span>
           </h2>
           <div class="controls">
             <select class="sel" id="approval-status">
@@ -81,9 +89,9 @@
           </div>
         </div>
         <table class="application-table">
-          <thead>
+          <thead style="height: 93px">
             <tr>
-              <th><input type="checkbox" name="" id="" /></th>
+              <th class="c-box"><input type="checkbox" name="" id="" /></th>
               <th>NO</th>
               <th>기존유형</th>
               <th>신청유형</th>
@@ -96,7 +104,7 @@
           </thead>
           <tbody>
             <tr>
-              <td><input type="checkbox" name="" id="" /></td>
+              <td class="c-box"><input type="checkbox" name="" id="" /></td>
               <td>1</td>
               <td>소득적격</td>
               <td>개인투자자</td>
@@ -107,7 +115,7 @@
               <td>2023-01-10 09:00:00</td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="" id="" /></td>
+              <td class="c-box"><input type="checkbox" name="" id="" /></td>
 
               <td>2</td>
               <td>소득적격</td>
@@ -115,11 +123,14 @@
               <td><button class="tbl-btn">보기</button></td>
               <td>2023-01-10 09:00:00</td>
               <td><span class="status pending">승인대기</span></td>
-              <td>사유 없음</td>
+              <td>
+                서류 식별 불가 금융투자업자에 계좌를 개설한지 1년 미만으로
+                전문투자자 승인 불가
+              </td>
               <td>2023-01-10 09:00:00</td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="" id="" /></td>
+              <td class="c-box"><input type="checkbox" name="" id="" /></td>
 
               <td>3</td>
               <td>소득적격</td>
@@ -131,7 +142,7 @@
               <td>2023-01-10 09:00:00</td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="" id="" /></td>
+              <td class="c-box"><input type="checkbox" name="" id="" /></td>
 
               <td>4</td>
               <td>소득적격</td>
@@ -143,7 +154,7 @@
               <td>2023-01-10 09:00:00</td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="" id="" /></td>
+              <td class="c-box"><input type="checkbox" name="" id="" /></td>
 
               <td>5</td>
               <td>소득적격</td>
@@ -155,7 +166,7 @@
               <td>2023-01-10 09:00:00</td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="" id="" /></td>
+              <td class="c-box"><input type="checkbox" name="" id="" /></td>
 
               <td>6</td>
               <td>소득적격</td>
@@ -243,7 +254,7 @@
     <!-- Modal -->
     <div id="modal2" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close2">&times;</span>
         <h2>서류 보기</h2>
         <div class="form-group">
           <label for="documentView">서류</label>

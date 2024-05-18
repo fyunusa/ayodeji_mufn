@@ -1,18 +1,34 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Pretendard;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    overflow: auto;
+
 }
 
 .container {
     /* width: 80%; */
     /* margin: auto; */
     /* padding: 20px; */
-    background-color: #fff;
+    /* background-color: #fff; */
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-}
+    /* .overlay { */
+        
+    overflow: auto;
 
+      /* } */
+}
+#design-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    pointer-events: none;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    z-index: 9999; /* Ensure the overlay is on top */
+}
 h1 {
     color: #333;
 }
@@ -20,12 +36,20 @@ h1 {
 .tabs {
     display: flex;
     /* border-bottom: 2px solid #ccc; */
-    margin-bottom: 20px;
+    margin-bottom: 55px;
+    margin-top: 21px;
 }
 
 .tab-button {
     flex: 1;
-    padding: 10px;
+    /* padding: 10px; */
+    padding-top: 12px;
+    padding-right: 19px;
+    padding-bottom: 14px;
+    padding-left: 19px;
+    width: 130px;
+  height: 63px;
+font-size: 25px;
     text-align: center;
     cursor: pointer;
     border: none;
@@ -46,7 +70,10 @@ h1 {
 }
 
 .controls label {
-    margin-right: 10px;
+
+    font-size: 24px;
+    margin-right: 32px;
+
 }
 
 .controls select {
@@ -56,16 +83,26 @@ h1 {
 .application-table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 25px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    /* white-space: wrap; */
 }
 
 .application-table th, .application-table td {
     border: 1px solid #ddd;
     padding: 10px;
-    text-align: center;
 }
 
 .application-table th {
     background-color: #f9f9f9;
+    text-align: center;
+
+}
+.application-table td {
+    /* word-wrap:break-word; */
+    text-align: left;
+
 }
 
 .status {
@@ -94,6 +131,8 @@ button {
 }
 .btn {
     color: #fff;
+    width: 164px;
+    height: 59px;
 
 }
 button:hover {
@@ -103,8 +142,12 @@ button:hover {
 
 .sel{
     border-radius: 4px;
-    padding: 10px, 12px, 10px, 12px;
-    font-size: 16px;
+    padding: 10px, 12px, 10px, 12px!important;
+    font-size: 28px;
+    width: 228px;
+    height: 66px;
+
+    
 
 }
 
@@ -113,14 +156,17 @@ button:hover {
 
 }
 #top-span{
-    font-size: 14px;
+    
+    font-size: 22px;
+    padding-left: 7px;
 }
 #top-h2{
-    font-size: 20px;
+    font-size: 31px;
 }
 #top-h1{
-    font-size: 24px;
+    font-size: 37px;
     margin: 0;
+    margin-bottom: 27px;
 }
 
 .red-dot {
@@ -200,6 +246,19 @@ button:hover {
     text-decoration: none;
     cursor: pointer;
 }
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 h2 {
     text-align: center;
@@ -254,6 +313,8 @@ h2 {
     color: white;
 }
 
-
+/* .c-box{
+    width: 43px;
+} */
 
 
